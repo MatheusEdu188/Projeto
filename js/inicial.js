@@ -86,3 +86,38 @@ fecharbtn.addEventListener("click", ()=>{
 adcpost.addEventListener("click", ()=>{
     modalcontainer.style.display = "flex"
 })
+
+
+
+
+
+
+
+
+
+
+
+// carrosel
+
+
+
+const imagens = [
+    './assets/img/SGCAM_20241026_173851016.PORTRAIT.jpg',
+    'assets/img/SGCAM_20241225_213002000.jpg',
+    'assets/img/SGCAM_20240824_182811539.jpg'
+];
+
+let index = 0;
+const imgElement = document.querySelector('.imgcarrosel');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+prevBtn.addEventListener('click', () => {
+    index = (index - 1 + imagens.length) % imagens.length;
+    imgElement.src = imagens[index];
+});
+
+nextBtn.addEventListener('click', () => {
+    index = (index + 1) % imagens.length;
+    imgElement.src = imagens[index];
+});

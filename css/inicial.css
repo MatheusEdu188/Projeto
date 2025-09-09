@@ -42,7 +42,21 @@ body{
     flex-direction: column;
     padding-bottom: 50px;
     padding-top: 50px;
+
+    background-color: rgb(255, 186, 186);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
 }
+
+#tituloLinha{
+    font-family: "Story Script", sans-serif;
+}
+
+
 .descricao{
     max-width: 300px;
     padding-top: 20px;
@@ -63,7 +77,7 @@ body{
     width: 100vw;
     display: flex;
     align-items: center;
-    gap: 500px;
+    gap: 50px;
 }
 
 .barraesquerda{
@@ -218,6 +232,47 @@ body{
 
 
 
+
+
+/* carrosel */
+
+
+.carrosel{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgcarrosel{
+    width: 500px;
+    overflow: hidden;
+    object-fit: cover;
+    height: 600px;
+}
+
+
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
 
 
 
